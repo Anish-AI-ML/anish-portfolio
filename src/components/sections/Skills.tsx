@@ -3,14 +3,18 @@
 import { motion } from "framer-motion";
 
 const skills = [
-  "TensorFlow", "PyTorch", "Scikit-learn", "OpenCV", "Keras",
-  "CNN", "RNN", "LSTM", "Transformers", "TinyML",
-  "Python", "Java", "JavaScript", "HTML", "CSS",
-  "C", "C++", "SQL", "FastAPI", "Flask",
-  "React", "Next.js", "Tailwind", "ThreeJS",
+  "Python", "Java", "JavaScript", "TypeScript", "HTML5", "CSS3", "C", "C++", "SQL", "Kotlin",
+  "TensorFlow", "TensorFlow Lite", "TensorFlow Lite Micro", "Keras", "Scikit-learn", "PyTorch", "OpenCV", "NumPy", "Pandas", "Matplotlib",
+  "Machine Learning", "Deep Learning", "Artificial Intelligence", "Natural Language Processing", "Computer Vision", "Predictive Analytics", "Data Analysis", "Data Visualization", "Data Preprocessing", "Feature Engineering", "Model Evaluation", "Transfer Learning", "TinyML",
+  "CNN", "RNN", "LSTM", "GRU", "MLP", "SVM", "KNN", "Naive Bayes", "Decision Trees", "Random Forest", "K-Means", "DBSCAN", "PCA", "LDA",
+  "React", "Next.js", "Tailwind CSS", "Bootstrap", "Three.js", "GSAP", "Responsive Web Design",
+  "Node.js", "Express.js", "FastAPI", "Flask", "REST API", "JSON",
+  "Android Studio", "Jetpack Compose", "Material 3", "MVVM", "Room Database", "SQLite", "Coroutines", "StateFlow", "DataStore", "Gradle",
   "MongoDB", "MySQL", "SQLite", "Supabase", "Firebase",
-  "AWS", "Google Cloud", "Git", "GitHub", "Linux",
-  "Docker", "VS Code", "Postman", "Jupyter"
+  "Git", "GitHub", "GitHub Actions", "Docker", "Linux", "Netlify", "Vercel",
+  "VS Code", "Postman", "Jupyter Notebook", "Google Colab", "MATLAB", "Canva", "Figma",
+  "ESP32", "Arduino", "Bluetooth", "IoT", "Embedded Systems", "Sensor Integration",
+  "Object-Oriented Programming", "Data Structures", "Algorithms", "Software Development", "Agile", "Debugging", "Problem Solving", "API Integration", "Version Control", "SDLC"
 ];
 
 export default function Skills() {
@@ -28,13 +32,13 @@ export default function Skills() {
       <div className="relative mx-auto flex max-w-5xl flex-wrap justify-center gap-4">
         {/* Background glow for the cloud */}
         <div className="absolute left-1/2 top-1/2 -z-10 h-96 w-96 -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-500/20 blur-[100px]" />
-        
+
         {skills.map((skill, index) => {
           // Calculate random float properties for a natural look
           const floatDuration = 3 + Math.random() * 4;
           const floatDelay = Math.random() * 2;
           const yOffset = -10 - Math.random() * 15;
-          
+
           return (
             <motion.div
               key={skill}

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Award, ShieldCheck, Database, Code2, Network, Brain, Cpu, LineChart, Gamepad2, Blocks } from "lucide-react";
+import { Award, ShieldCheck, Database, Code2, Network, Brain, Cpu, LineChart, Gamepad2, Blocks, BarChart3 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const certs = [
@@ -40,6 +40,12 @@ const certs = [
     issuer: "MathWorks",
     icon: <LineChart className="h-6 w-6 text-yellow-500" />,
     colSpan: "md:col-span-1 lg:col-span-1",
+  },
+  {
+    title: "Data Analysis in MATLAB",
+    issuer: "MathWorks",
+    icon: <BarChart3 className="h-6 w-6 text-cyan-500" />,
+    colSpan: "md:col-span-2 lg:col-span-2",
   },
   {
     title: "Python for Data Science",
@@ -135,7 +141,7 @@ export default function Certifications() {
             )}
           >
             <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-emerald-500/10 blur-3xl transition-all group-hover:bg-emerald-500/20" />
-            
+
             <div className="relative z-10 flex h-full flex-col justify-between">
               <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/5 shadow-inner">
                 {cert.icon}

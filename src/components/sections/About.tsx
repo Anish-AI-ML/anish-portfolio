@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 const bentoCards = [
   {
     title: "Who Am I",
-    description: "I believe great software is where intelligence meets simplicity. As an AI/ML Engineer and Full-Stack Developer, I design and build AI-driven products that combine modern engineering, thoughtful user experiences, and scalable cloud technologies. My passion lies in transforming ideas into reliable products that people genuinely enjoy using.",
+    description: "I am an aspiring Artificial Intelligence & Machine Learning Engineer, Full-Stack Developer, and Android Developer passionate about building intelligent, scalable, and user-centric software solutions. Currently pursuing Computer Science and Engineering with a specialization in AI & ML, I enjoy turning innovative ideas into real-world applications through Artificial Intelligence, modern web technologies, mobile development, and cloud-based solutions.\n\nMy experience includes developing AI-powered applications, Android apps, responsive web platforms, and IoT-based projects using technologies such as Python, TensorFlow, React, FastAPI, Android Studio, and modern development tools. Every project strengthens my problem-solving abilities and deepens my understanding of software engineering and emerging technologies.\n\nI believe great software is where intelligence meets simplicity. My goal is to create products that are efficient, scalable, and intuitive while continuously learning, exploring new technologies, and contributing to impactful solutions that make a difference.",
     className: "md:col-span-2 md:row-span-2",
     icon: <Terminal className="mb-4 h-8 w-8 text-blue-500" />,
   },

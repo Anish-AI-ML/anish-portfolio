@@ -13,7 +13,7 @@ const navLinks = [
   { name: "Projects", href: "#projects" },
   { name: "Skills", href: "#skills" },
   { name: "Certifications", href: "#certifications" },
-  { name: "Github", href: "#github" },
+  { name: "Github", href: "#projects" },
   { name: "ANVE TECH", href: "#anvetech" },
   { name: "Contact", href: "#contact" },
 ];
