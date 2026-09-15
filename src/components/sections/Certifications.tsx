@@ -76,6 +76,16 @@ const certs = [
     icon: <Cpu className="h-6 w-6 text-cyan-500" />,
   },
   {
+    title: "AI for Business Professionals",
+    issuer: "HP LIFE",
+    category: "ai-ml"
+  },
+  {
+    title: "Critical Thinking in the AI Era",
+    issuer: "HP LIFE",
+    category: "ai-ml"
+  },
+  {
     title: "Industrial Program on Artificial Intelligence – Project Completion",
     issuer: "1Stop.ai / Personifwy",
     category: "ai-ml",
