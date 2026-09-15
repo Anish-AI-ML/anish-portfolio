@@ -78,12 +78,14 @@ const certs = [
   {
     title: "AI for Business Professionals",
     issuer: "HP LIFE",
-    category: "ai-ml"
+    category: "ai-ml",
+    icon: <Brain className="h-6 w-6 text-teal-400" />,
   },
   {
     title: "Critical Thinking in the AI Era",
     issuer: "HP LIFE",
-    category: "ai-ml"
+    category: "ai-ml",
+    icon: <Award className="h-6 w-6 text-emerald-400" />,
   },
   {
     title: "Industrial Program on Artificial Intelligence – Project Completion",
