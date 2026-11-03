@@ -23,6 +23,7 @@ import { cn } from "@/lib/utils";
 const categories = [
   { id: "all", name: "All" },
   { id: "ai-ml", name: "AI & Machine Learning" },
+  { id: "internships", name: "Internships" },
   { id: "data-science", name: "Data Science" },
   { id: "cloud", name: "Cloud & Infra" },
   { id: "cybersecurity", name: "Cybersecurity" },
@@ -31,8 +32,39 @@ const categories = [
 
 type CategoryType = (typeof categories)[number]["id"];
 
-const certs = [
+interface CertItem {
+  title: string;
+  issuer: string;
+  category: CategoryType | CategoryType[];
+  icon: React.ReactNode;
+}
+
+const certs: CertItem[] = [
   // AI & Machine Learning
+  {
+    title: "Introduction to Machine Learning",
+    issuer: "NPTEL",
+    category: "ai-ml",
+    icon: <Brain className="h-6 w-6 text-cyan-400" />,
+  },
+  {
+    title: "Machine Learning with Python",
+    issuer: "Cognitive Class.ai / IBM",
+    category: "ai-ml",
+    icon: <Code2 className="h-6 w-6 text-blue-400" />,
+  },
+  {
+    title: "Agentic AI Internship",
+    issuer: "NeubAltics Research Hub",
+    category: ["ai-ml", "internships"],
+    icon: <Network className="h-6 w-6 text-emerald-400" />,
+  },
+  {
+    title: "Artificial Intelligence Internship Training & Completion",
+    issuer: "Internship Studio",
+    category: ["ai-ml", "internships"],
+    icon: <GraduationCap className="h-6 w-6 text-purple-400" />,
+  },
   {
     title: "Fundamentals of Machine Learning and Artificial Intelligence",
     issuer: "AWS",
@@ -90,13 +122,13 @@ const certs = [
   {
     title: "Industrial Program on Artificial Intelligence – Project Completion",
     issuer: "1Stop.ai / Personifwy",
-    category: "ai-ml",
+    category: ["ai-ml", "internships"],
     icon: <Award className="h-6 w-6 text-blue-500" />,
   },
   {
     title: "Artificial Intelligence Internship",
     issuer: "1Stop",
-    category: "ai-ml",
+    category: ["ai-ml", "internships"],
     icon: <GraduationCap className="h-6 w-6 text-purple-400" />,
   },
   {
@@ -223,7 +255,11 @@ export default function Certifications() {
   const filteredCerts =
     activeCategory === "all"
       ? certs
-      : certs.filter((cert) => cert.category === activeCategory);
+      : certs.filter((cert) =>
+          Array.isArray(cert.category)
+            ? cert.category.includes(activeCategory)
+            : cert.category === activeCategory
+        );
 
   return (
     <section id="certifications" className="relative w-full max-w-7xl px-6 py-32 lg:px-12">

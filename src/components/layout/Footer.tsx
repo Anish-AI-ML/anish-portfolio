@@ -25,7 +25,9 @@ export default function Footer() {
               <ul className="mt-4 space-y-2 text-sm text-zinc-400">
                 <li><Link href="#about" className="hover:text-white transition-colors">About</Link></li>
                 <li><Link href="#experience" className="hover:text-white transition-colors">Experience</Link></li>
+                <li><Link href="#internships" className="hover:text-white transition-colors">Internships</Link></li>
                 <li><Link href="#projects" className="hover:text-white transition-colors">Projects</Link></li>
+                <li><Link href="#certifications" className="hover:text-white transition-colors">Certifications</Link></li>
                 <li><Link href="#anvetech" className="hover:text-white transition-colors">Anve Tech</Link></li>
               </ul>
             </div>
